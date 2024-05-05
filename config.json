@@ -8,10 +8,10 @@
   "api_port": 8082,
   "platform": "bilibili2",
   "room_display_id": "31562294",
-  "chat_type": "none",
+  "chat_type": "sparkdesk",
   "need_lang": "none",
-  "before_prompt": "请简要回复:",
-  "after_prompt": "",
+  "before_prompt": "作为一个B站主播，请简要回复:",
+  "after_prompt": "回答内容不要出现**，可以把**直接去掉",
   "comment_template": {
     "enable": false,
     "copywriting": "{username}说：{comment}"
@@ -62,7 +62,7 @@
     "proxy_port": "10809"
   },
   "read_username": {
-    "enable": true,
+    "enable": false,
     "username_max_len": 10,
     "voice_change": true,
     "reply_before": [
@@ -77,7 +77,7 @@
     ]
   },
   "read_comment": {
-    "enable": true,
+    "enable": false,
     "read_username_enable": true,
     "username_max_len": 10,
     "voice_change": true,
@@ -185,7 +185,7 @@
   "live2d": {
     "enable": false,
     "port": 12345,
-    "name": "hibiki"
+    "name": "Hiyori"
   },
   "openai": {
     "api": "https://api.openai.com/v1",
@@ -243,10 +243,10 @@
     "preset": "请扮演一个AI虚拟主播。不要回答任何敏感问题！不要强调你是主播，只需要回答问题！"
   },
   "sparkdesk": {
-    "type": "api",
-    "cookie": "",
-    "fd": "",
-    "GtToken": "",
+    "type": "web",
+    "cookie": "di_c_mti=7e9dc3d2-22f3-6129-8dbe-304ad409f202; d_d_app_ver=1.4.0; daas_st={%22sdk_ver%22:%221.3.9%22%2C%22status%22:%220%22}; appid=150b4dfebe; d_d_ci=f0bfe127-cf47-6c6f-b834-24eab6bf2baa; ssoSessionId=e0602593-1378-47e7-93c0-1351edb4fc9c; account_id=17881014544; gt_local_id=0EIf34nkAABTw+GE4TSklI3M1b1I5utGLedaHpvobnLd2a1UuNMIwA==",
+    "fd": "877137",
+    "GtToken": "RzAwAGPqHMbiJrDfHticOj73CXBgmpPCPpdIkHjFWIZyvenFC/51bHeYYmKZxpDxF/VWl3it3HBf8OGHzb6s5G/U0YtWF+XSqUxKUaZiP2dwHMxVKQDLXrSlZhpBUtcH6vYSSpUZMhOl0SqI6YNM24Bp5WT2/it3snSpfyr7eJCajxXmlBQaFP7w02uCVfuklk+3LkDIUjR0WssNYsnSVrgOGI+nglTXbhfLlyAZuup5//gko/PXzdKyFHYnkODBMWNV7OqgQkdRftevZGwYYQvkEI17JmgdKXAdU4LCemikjyNEQ1WU5g14jWHrxTXrjnXlyL5Tg4MQy4jJoF1HpibF37/ymrk+Z5sJNkvSZY81bo5AheSddF+0B3SK2Igy/eWo6kYuX1chmZkETkkOa/Y8xX9WjCr3nj4gfJAeRXJPsz1ZyS826v03ccURmwLXbXajDdpQHW2ND7tFzy+kdwqATkuNgGs4RzAwkCdZ/Rw+wfbnpZp2gsXe7PXhq59neQwwSofsdIKovaRvgTyN6H2ZRvGuSex7y+3GxRCD+zw21koSMvXHNblkPZLayl0gbkILxfDJssRBFleQICMHiPXPwh8bCNvBllbjUpKeVd0ZF7e9ytmFCz6XR4pH8qC/sDXDfyYGCpc8QCz2svYMNUi5tssWRRyaDXuGB03C2gVWl7GxhIYjDb+nFR8H75/PZGc5Zj9cxly03YTwc5PYXbucajD5WBopgzaRJsP2rVG058sjLYiekrXmC3TbB9JgezsKtFdNuxG3Ku4SzvGygsH4zLOZ7J68ss0lVBmTDdqTqT7IEEo7GM+1CpvcgUDAFTe6KF3V1/8HWEIPICUOPx7otjjgSSNuNxrZv7qDRevnMAp5GvKbnLlSeVpgfwqzYQVyqThxnw0cLq23TRtls1LPgZ3Oa9l77/fFUye0k8IvA24wOiPBXBr3bGBuSSXjyY+bY8oUyOX1OciMPDn5AwciyPoE+FPMjInoayJXZ/aHqj69lQFd7ylJIkJPhpvJJrEqIitkiM/+GZ0OVWxFLvu/Y+/um5Ps8JRe9JnZlwqCv79RgkuQFFgpCdrMYDqiT5+0k8XMoL7b0rMCr+noP+ms6UogxgGQbUjT46KJMF1RtE00y+1JPIEp72NrvP9FURChYHrAvoYR8afqLIOVFstyLqaAKKeMK0nF1fOURmpUjLt4KUBjGfn/e7m5c1WJNPXyds0YdulUMFs09HhPj6L5WLvp/eW9X7AF0eU7Oodgp12wvbNGk4TzkWaos19SViwNzYwHTih50SCGtQZnoXU+4YKfnPRW1kpgcwEnsOqAHFMZ99HQLCrXNFrdWSVn87DwRZfguoiBcOASqC6rUrY0pLN93hY8OzlcGmheygqmHqrmZP/viUCNMt1vo184YVk5tB1Xb3gE9YgqFejauW2QBL7sB96dfLPoPb2mghtbP4qvULrhHQ1iS+rkwjOf3z9Gp+Lp+zxsYnWsa/8m/oIE2scDnoftbomV7qOERHrpXPDfYtfUWfSrtVkcsvOuO3cBhRIUzANi6q+CxXwhAgGRXsExNyx3OIpjRZIrCq6rOGCe7EM3pNGfxqOnbYFz+strD8FrF2jDrYaecj591/ywAoHgMpOKYRwbTIY9IN9QiLEanAcbXBwg7HF+cXoF3ep/SkFdazhyjmGDvWZjrY1Psh3HGP8du7/FTYqmpqnOW5cRjWG8KurhoZdVhX4Gcq0Z3FUPCaFMWLhtye6HpOSUQ/B0FtviT37kulijlRK/heLQi3hgzqPLQbBjjepbaS6+icLj7rqAqrushCtxi5gZTHFA9E6Rwm6MNR3csXbD2/pTMwJjhiLbMxMvBY5QcFj2VZ4ZDwJMlAcOjMV9TGQPSsH6",
     "app_id": "",
     "api_secret": "",
     "api_key": "",
@@ -345,7 +345,7 @@
     "type": "web",
     "web": {
       "api_ip_port": "http://127.0.0.1:3000",
-      "cookie": ""
+      "cookie": "BIDUPSID=7360E7F8BF81971D2ECDCB195F908AAE; PSTM=1693101518; BAIDUID=7360E7F8BF81971DB7A741B996F4099F:SL=0:NR=10:FG=1; BDUSS=VR4clBlQUlPV2hxd2tHUmVXY0NiTVFpbjYzZi1DRmtQZ3BxeGt6NmRNWnZQR1ZsRVFBQUFBJCQAAAAAAAAAAAEAAABUoBCH16vQtF8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG-vPWVvrz1lZ; BDUSS_BFESS=VR4clBlQUlPV2hxd2tHUmVXY0NiTVFpbjYzZi1DRmtQZ3BxeGt6NmRNWnZQR1ZsRVFBQUFBJCQAAAAAAAAAAAEAAABUoBCH16vQtF8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG-vPWVvrz1lZ; H_WISE_SIDS=40123_40009_40203_40206_40217_40224_40250_40266_40294_40291_40288_40285; BAIDUID_BFESS=7360E7F8BF81971DB7A741B996F4099F:SL=0:NR=10:FG=1; H_WISE_SIDS_BFESS=40123_40009_40203_40206_40217_40224_40250_40266_40294_40291_40288_40285; BDRCVFR[feWj1Vr5u3D]=I67x6TjHwwYf0; PSINO=1; delPer=0; ZFY=JONBwpBT64iR0wbzzasbUz8wPiyXW9S60yJ:AFv1DryU:C; H_PS_PSSID=40488_40080_60137; BA_HECTOR=2h812l2404810kal21048481rcfr9l1j3esff1t; BDORZ=B490B5EBF6F3CD402E515D22BCDA1598; BCLID=10494716452149234330; BCLID_BFESS=10494716452149234330; BDSFRCVID=K-AOJexroG3Kj2Qtbp4--t9gPwHjxXjTDYrE8HDLnjRzg2_VY-fcEG0PtsBmvLtb6jBvogKK0mOTHv-F_2uxOjjg8UtVJeC6EG0Ptf8g0M5; BDSFRCVID_BFESS=K-AOJexroG3Kj2Qtbp4--t9gPwHjxXjTDYrE8HDLnjRzg2_VY-fcEG0PtsBmvLtb6jBvogKK0mOTHv-F_2uxOjjg8UtVJeC6EG0Ptf8g0M5; H_BDCLCKID_SF=tJAj_D-btK03H48k-4QEbbQH-UnLqh5IbmOZ04n-ah058J7h-ROGWfAQMaJWtIr3LgjUbxjm3UTdsq76Wh35K5tTQP6rLqcZbeQ4KKJxbn5Boh5MLP5dKxo-hUJiB5OLBan7LDnIXKohJh7FM4tW3J0ZyxomtfQxtNRJ0DnjtpChbC_RD5DMDTJWepJf-K6E2I5jBRu8Kb7VbpTyeMnkbJkXhPteW4RIKjnIhlRM2I3OM56d0McR0q_7Qbrr0xJHyjRzBJ05WbRPSxT_5x6pQT8r5Mo8XUQT0KrrQqDXab3vOIJzXpO156kzBN5thURB2DkO-4bCWJ5TMl5jDh3Mb6ksD-FtqjtDfRKD_KKMf-TEJJjkq45HMt00qxby26niHm69aJ5y-J7nhpvFDlQM-RO3qecJq4bTb2bBXUn_QpbZqlK9yMOdh4Iw2xtHyh5kHCc2Kl0MLPb5ER6CXbODj4IY5xnMBMPjamOnaPLE3fAKftnOM46JehL3346-35543bRTLnLy5KJYMDcnK4-Xj5v0eHjP; H_BDCLCKID_SF_BFESS=tJAj_D-btK03H48k-4QEbbQH-UnLqh5IbmOZ04n-ah058J7h-ROGWfAQMaJWtIr3LgjUbxjm3UTdsq76Wh35K5tTQP6rLqcZbeQ4KKJxbn5Boh5MLP5dKxo-hUJiB5OLBan7LDnIXKohJh7FM4tW3J0ZyxomtfQxtNRJ0DnjtpChbC_RD5DMDTJWepJf-K6E2I5jBRu8Kb7VbpTyeMnkbJkXhPteW4RIKjnIhlRM2I3OM56d0McR0q_7Qbrr0xJHyjRzBJ05WbRPSxT_5x6pQT8r5Mo8XUQT0KrrQqDXab3vOIJzXpO156kzBN5thURB2DkO-4bCWJ5TMl5jDh3Mb6ksD-FtqjtDfRKD_KKMf-TEJJjkq45HMt00qxby26niHm69aJ5y-J7nhpvFDlQM-RO3qecJq4bTb2bBXUn_QpbZqlK9yMOdh4Iw2xtHyh5kHCc2Kl0MLPb5ER6CXbODj4IY5xnMBMPjamOnaPLE3fAKftnOM46JehL3346-35543bRTLnLy5KJYMDcnK4-Xj5v0eHjP; Hm_lvt_01e907653ac089993ee83ed00ef9c2f3=1714909698; __bid_n=18b78f49f8506248c85c61; XFI=bf517dd0-0ad7-11ef-ab3b-e59d7abba673; RT=\"z=1&dm=baidu.com&si=aa898da3-90fb-45d3-ba45-6acb7b6881f8&ss=lvtgyf2z&sl=b&tt=6fv&bcn=https%3A%2F%2Ffclog.baidu.com%2Flog%2Fweirwood%3Ftype%3Dperf\"; Hm_lpvt_01e907653ac089993ee83ed00ef9c2f3=1714910723; XFCS=A6CE6BFC4ED2B928D7280F756EF88A26FDDB734749EDCB11EC2E82646C7C7B7D; XFT=jDnX4h8sbeesDdFIiddclMGJP74Kpm08JCI1i8TjyeM=; ab_sr=1.0.1_MjdhMTc5MDA1NzczZGNiNmNiZWQwMmQ5MTgwZDBkNDNmM2RhNzMxODU5Y2JlOGQyMmM0YmZkNTFmMTI4MTU1OTEwMzYwYmRmZDk1YzVkMDJhNWU1NzBjMDY0NmI0MmViYjMxODNjYzM1YjQzYWI1OTk2N2Q1YmRlMzFiMGU1MDFmNjI5NThhZGQwYWJhZmJkZjkyNjdlOTcwMDlkMjQ1ZGQyZGVlY2JhYmY0NmY5Njc2OTRmYjVkZGEwMGI5MTE5"
     },
     "api": {
       "api_key": "",
@@ -747,10 +747,7 @@
         "continuous_play_num": 2,
         "max_play_time": 10.0,
         "play_list": [
-          "欢迎.mp3",
-          "科技.mp3",
-          "前端.mp3",
-          "笑话.mp3"
+          "欢迎.mp3"
         ]
       },
       {
@@ -764,13 +761,13 @@
     "audio_interval": "20",
     "switching_interval": "10",
     "random_play": true,
-    "auto_play": false
+    "auto_play": true
   },
   "header": {
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42"
   },
   "talk": {
-    "key_listener_enable": true,
+    "key_listener_enable": false,
     "device_index": "2",
     "no_recording_during_playback": true,
     "no_recording_during_playback_sleep_interval": 1.0,
@@ -783,7 +780,7 @@
     "silence_threshold": 15.0,
     "CHANNELS": 1,
     "RATE": 16000,
-    "show_chat_log": true,
+    "show_chat_log": false,
     "baidu": {
       "app_id": "",
       "api_key": "",
@@ -822,7 +819,7 @@
     }
   },
   "captions": {
-    "enable": true,
+    "enable": false,
     "file_path": "log/字幕.txt",
     "raw_file_path": "log/原文字幕.txt"
   },
@@ -865,26 +862,21 @@
       ]
     },
     "comment": {
-      "enable": false,
+      "enable": true,
       "random": true,
       "copy": [
         "请给我简单介绍一项最新的未来科技，它的原理，应用场景以及对我们生活的影响，控制在100字以内",
         "请给我简单讲个笑话，让我在忙碌的生活中获得快乐，控制在100字",
-        "请给我介绍一个前端技术，让我深入的学习前端技术"
+        "请给我介绍一下前端技术，让我深入的学习前端技术，请要出现**，控制在100字",
+        "请给我介绍下React Native 的技术，详细一些，请要出现**，控制在100字",
+        "请给我介绍下前端的就业岗位，请要出现**，控制在100字"
       ]
     },
     "local_audio": {
       "enable": true,
       "random": true,
       "path": [
-        "out/copywriting/欢迎.mp3",
-        "data/闲时任务/音频/ikaros/我和主人在一起，怎么说呢，心有种轻飘飘的感觉.wav",
-        "data/闲时任务/音频/ikaros/我想在主人身边，从今往后.wav",
-        "data/闲时任务/音频/ikaros/我是主人最讨厌的兵器，这样瞒住主人真的好吗.wav",
-        "data/闲时任务/音频/ikaros/我是玩赏用天使，我要回到主人的身边.wav",
-        "data/闲时任务/音频/ikaros/知道主人在哪里吗.wav",
-        "data/闲时任务/音频/ikaros/遇到麻烦了吗，主人.wav",
-        "data/闲时任务/音频/ikaros/那个，主人，睡觉是怎么一回事.wav"
+        "out/copywriting/欢迎.mp3"
       ]
     }
   },
@@ -916,7 +908,7 @@
     "api_ip_port": "http://127.0.0.1:5500"
   },
   "integral": {
-    "enable": true,
+    "enable": false,
     "entrance": {
       "enable": false,
       "get_integral": 1,
@@ -1238,7 +1230,7 @@
       "local_audio_path": "data/异常报警/platform"
     },
     "llm": {
-      "enable": false,
+      "enable": true,
       "start_alarm_error_num": 5,
       "auto_restart_error_num": 10,
       "type": "local_audio",
