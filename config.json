@@ -183,9 +183,9 @@
     "lowest_price": 0.1
   },
   "live2d": {
-    "enable": true,
+    "enable": false,
     "port": 12345,
-    "name": "koharu"
+    "name": "hibiki"
   },
   "openai": {
     "api": "https://api.openai.com/v1",
