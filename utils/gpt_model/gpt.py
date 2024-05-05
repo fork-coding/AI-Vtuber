@@ -22,7 +22,7 @@ from utils.gpt_model.zhipu import Zhipu
 from utils.gpt_model.bard import Bard_api
 from utils.gpt_model.yiyan import Yiyan
 from utils.gpt_model.tongyi import TongYi
-from utils.gpt_model.tongyixingchen import TongYiXingChen
+# from utils.gpt_model.tongyixingchen import TongYiXingChen
 from utils.gpt_model.my_qianfan import My_QianFan
 from utils.gpt_model.my_wenxinworkshop import My_WenXinWorkShop
 from utils.gpt_model.gemini import Gemini
@@ -48,7 +48,7 @@ class GPT_Model:
             "bard": Bard_api,
             "yiyan": Yiyan,
             "tongyi": TongYi,
-            "tongyixingchen": TongYiXingChen,
+            # "tongyixingchen": TongYiXingChen,
             "my_wenxinworkshop": My_WenXinWorkShop,
             "my_qianfan": My_QianFan,
             "gemini": Gemini,

@@ -6,7 +6,6 @@ openai
 pygame
 edge-tts==6.1.6
 langid
-aiohttp==3.9.1
 asyncio
 slack_sdk==3.21.3
 profanity==1.1
@@ -26,15 +25,12 @@ sentence_transformers
 pydub
 send2trash
 keyboard
-PyAudio
 SpeechRecognition
 baidu-aip
 chardet
 pypinyin
 gradio_client
 schedule
-bilibili-api-python
-langchain==0.0.142
 playwright
 protobuf==3.20.3
 certifi
@@ -57,7 +53,7 @@ PySocks
 pure-protobuf==3.0.0a5
 flask
 flask_cors
-xingchen
+
 flask_socketio
 emoji
 google-generativeai
@@ -67,7 +63,6 @@ httpx==0.25.2
 Pillow==10.1.0
 pygtrans
 jieba
-gradio==4.16.0
 TikTokLive
 azure-cognitiveservices-speech
 pyjwt

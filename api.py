@@ -596,7 +596,7 @@ def start_server(config_path, sub_thread_exit_events):
 
             username = event["data"]["data"]["uname"]
 
-            logging.info(f"用户：{username} 进入直播间")
+            logging.info(f"用户：{username} 进入直播间,{event["data"]["data"]}")
 
             # 添加用户名到最新的用户名列表
             add_username_to_last_username_list(username)
@@ -767,7 +767,7 @@ def start_server(config_path, sub_thread_exit_events):
 
                 username = command['data']['uname']
 
-                logging.info(f"用户：{username} 进入直播间")
+                logging.info(f"用户：{username} 进入直播间,{command['data']}")
 
                 # 添加用户名到最新的用户名列表
                 add_username_to_last_username_list(username)

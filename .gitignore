@@ -223,6 +223,7 @@ backup
 Miniconda3/
 
 models/mo*
+models/.locks
 
 out/sd/*
 

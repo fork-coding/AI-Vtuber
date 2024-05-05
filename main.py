@@ -33,14 +33,16 @@ from utils.config import Config
 from utils.logger import Configure_logger
 from utils.my_handle import My_handle
 
-"""
-	___ _                       
-	|_ _| | ____ _ _ __ ___  ___ 
-	 | || |/ / _` | '__/ _ \/ __|
-	 | ||   < (_| | | | (_) \__ \
-	|___|_|\_\__,_|_|  \___/|___/
 
-"""
+
+# """
+# 	___ _                       
+# 	|_ _| | ____ _ _ __ ___  ___ 
+# 	 | || |/ / _` | '__/ _ \/ __|
+# 	 | ||   < (_| | | | (_) \__ \
+# 	|___|_|\_\__,_|_|  \___/|___/
+
+# """
 
 config = None
 common = None
@@ -1486,17 +1488,17 @@ def start_server():
                 # 闲时计数清零
                 idle_time_auto_clear("comment")
 
-                # logging.info(f'[{client.room_id}] {message.uname}：{message.msg}')
+                logging.info(f'[{client.room_id}] {message.uname}：{message.msg}')
                 content = message.msg  # 获取弹幕内容
                 username = message.uname  # 获取发送弹幕的用户昵称
-                user_face = message.face
+                # user_face = message.face
 
                 logging.info(f"[{username}]: {content}")
 
                 data = {
                     "platform": platform,
                     "username": username,
-                    "user_face": user_face,
+                    "user_face": '',
                     "content": content
                 }
 
@@ -1566,19 +1568,19 @@ def start_server():
                 # 闲时计数清零
                 idle_time_auto_clear("comment")
 
-                # logging.info(f'[{client.room_id}] {message.uname}：{message.msg}')
+                logging.info(f'[{client.room_id}] {message.uname}：{message.msg}')
                 content = message.msg  # 获取弹幕内容
                 username = message.uname  # 获取发送弹幕的用户昵称
-                user_face = message.uface
+                # user_face = message.uface
 
-                logging.debug(f"用户：{username} 头像：{user_face}")
+                # logging.debug(f"用户：{username} 头像：{user_face}")
 
                 logging.info(f"[{username}]: {content}")
 
                 data = {
                     "platform": platform,
                     "username": username,
-                    "user_face": user_face,
+                    "user_face": '',
                     "content": content
                 }
 

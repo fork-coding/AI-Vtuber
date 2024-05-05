@@ -17,14 +17,14 @@ from .db import SQLiteDB
 from .my_translate import My_Translate
 
 
-"""
-	___ _                       
-	|_ _| | ____ _ _ __ ___  ___ 
-	 | || |/ / _` | '__/ _ \/ __|
-	 | ||   < (_| | | | (_) \__ \
-	|___|_|\_\__,_|_|  \___/|___/
+# """
+# 	___ _                       
+# 	|_ _| | ____ _ _ __ ___  ___ 
+# 	 | || |/ / _` | '__/ _ \/ __|
+# 	 | ||   < (_| | | | (_) \__ \
+# 	|___|_|\_\__,_|_|  \___/|___/
 
-"""
+# """
 class SingletonMeta(type):
     _instances = {}
     _lock = threading.Lock()
@@ -238,33 +238,33 @@ class My_handle(metaclass=SingletonMeta):
                 f.write('')
                 logging.info(f'{self.comment_file_path} 弹幕文件已创建')
 
-        """                                                                                                                
+        # """                                                                                                                
                                                                                                                                         
-            .............  '>)xcn)I                                                                                 
-            }}}}}}}}}}}}](v0kaaakad\..                                                                              
-            ++++++~~++<_xpahhhZ0phah>                                                                               
-            _________+(OhhkamuCbkkkh+                                                                               
-            ?????????nbhkhkn|makkkhQ^                                                                               
-            [[[[[[[}UhkbhZ]fbhkkkhb<                                                                                
-            1{1{1{1ChkkaXicohkkkhk]                                                                                 
-            ))))))JhkkhrICakkkkap-                                                                                  
-            \\\\|ckkkat;0akkkka0>                                                                                   
-            ttt/fpkka/;Oakhhaku"                                                                                    
-            jjjjUmkau^QabwQX\< '!<++~>iI       .;>++++<>I'     :+}}{?;                                              
-            xxxcpdkO"capmmZ/^ +Y-;,,;-Lf     ItX/+l:",;>1cx>  .`"x#d>`        .`.                                   
-            uuvqwkh+1ahaaL_  'Zq;     ;~   '/bQ!         "uhc: . 1oZ'         "vj.     ^'                           
-            ccc0kaz!kawX}'   .\hbv?:      .jop;           .C*L^  )oO`        .':I^. ."_L!^^.    ':;,'               
-            XXXXph_cU_"        >rZhbC\!   "qaC...          faa~  )oO`        ;-jqj .l[mb1]_'  ^(|}\Ow{              
-            XXXz00i+             '!1Ukkc, 'JoZ` .          uop;  )oO'          >ou   .Lp"  . ,0j^^>Yvi              
-            XXXzLn. .        ^>      lC#(  lLot.          _kq- . 1o0'          >on   .Qp,    }*|><i^  .             
-            YYYXQ|           ,O]^.   "XQI . `10c~^.    '!t0f:   .t*q;....'l1. ._#c.. .Qkl`I_"Iw0~"`,<|i.            
-            (|((f1           ^t1]++-}(?`      '>}}}/rrx1]~^    ^?jvv/]--]{r) .i{x/+;  ]Xr1_;. :(vnrj\i.             
-                '1..             .''.   .         .Itq*Z}`             ..                                           
-                 +; .                                "}XmQf-i!;.                                                    
-                  .                                     ';><iI"                                                     
+        #     .............  '>)xcn)I                                                                                 
+        #     }}}}}}}}}}}}](v0kaaakad\..                                                                              
+        #     ++++++~~++<_xpahhhZ0phah>                                                                               
+        #     _________+(OhhkamuCbkkkh+                                                                               
+        #     ?????????nbhkhkn|makkkhQ^                                                                               
+        #     [[[[[[[}UhkbhZ]fbhkkkhb<                                                                                
+        #     1{1{1{1ChkkaXicohkkkhk]                                                                                 
+        #     ))))))JhkkhrICakkkkap-                                                                                  
+        #     \\\\|ckkkat;0akkkka0>                                                                                   
+        #     ttt/fpkka/;Oakhhaku"                                                                                    
+        #     jjjjUmkau^QabwQX\< '!<++~>iI       .;>++++<>I'     :+}}{?;                                              
+        #     xxxcpdkO"capmmZ/^ +Y-;,,;-Lf     ItX/+l:",;>1cx>  .`"x#d>`        .`.                                   
+        #     uuvqwkh+1ahaaL_  'Zq;     ;~   '/bQ!         "uhc: . 1oZ'         "vj.     ^'                           
+        #     ccc0kaz!kawX}'   .\hbv?:      .jop;           .C*L^  )oO`        .':I^. ."_L!^^.    ':;,'               
+        #     XXXXph_cU_"        >rZhbC\!   "qaC...          faa~  )oO`        ;-jqj .l[mb1]_'  ^(|}\Ow{              
+        #     XXXz00i+             '!1Ukkc, 'JoZ` .          uop;  )oO'          >ou   .Lp"  . ,0j^^>Yvi              
+        #     XXXzLn. .        ^>      lC#(  lLot.          _kq- . 1o0'          >on   .Qp,    }*|><i^  .             
+        #     YYYXQ|           ,O]^.   "XQI . `10c~^.    '!t0f:   .t*q;....'l1. ._#c.. .Qkl`I_"Iw0~"`,<|i.            
+        #     (|((f1           ^t1]++-}(?`      '>}}}/rrx1]~^    ^?jvv/]--]{r) .i{x/+;  ]Xr1_;. :(vnrj\i.             
+        #         '1..             .''.   .         .Itq*Z}`             ..                                           
+        #          +; .                                "}XmQf-i!;.                                                    
+        #           .                                     ';><iI"                                                     
                                                                                                                                         
                                                                                                                                                                                                                                                      
-        """
+        # """
         try:
             # 数据库
             self.db = SQLiteDB(My_handle.config.get("database", "path"))
@@ -360,7 +360,7 @@ class My_handle(metaclass=SingletonMeta):
                     }
                 }
 
-                tmp_json = My_handle.common.send_request(f'http://{My_handle.config.get("webui", "ip")}:{My_handle.config.get("webui", "port")}/callback', "POST", return_webui_json, timeout=30)
+                tmp_json = My_handle.common.send_request(f'http://{My_handle.config.get("webui", "ip")}:{My_handle.config.get("webui", "port")}/callback', "POST", return_webui_json, timeout=5000)
         except Exception as e:
             logging.error(traceback.format_exc())
 
@@ -889,16 +889,16 @@ class My_handle(metaclass=SingletonMeta):
         return False
 
 
-    """
+    # """
     
-         ]@@@@@               =@@       @@^              =@@@@@@].  .@@` ./@@@ ,@@@^                /@^                     
-        @@^      @@*          =@@       @@^              =@@   ,@@\      =@@   @@^                                          
-        \@@].  =@@@@@.=@@@@@` =@@@@@@@. @@^ ./@@@@\.     =@@    .@@^.@@.@@@@@@@@@@@.@@   @@^ /@@@@^ @@^ ./@@@@@]  @@/@@@@.  
-          ,\@@\  @@*   .]]/@@ =@@.  =@\ @@^ @@\]]/@^     =@@     @@^.@@. =@@   @@^ .@@   @@^ @@\`   @@^ @@^   \@^ @@`  \@^  
-             @@^ @@* ,@@` =@@ =@@   =@/ @@^ @@`          =@@   ./@/ .@@. =@@   @@^ .@@.  @@^   ,\@@ @@^ @@^   /@^ @@*  =@^  
-       .@@@@@@/  \@@@.@@@@@@@ =@@@@@@/  @@^ .\@@@@@.     =@@@@@@/`  .@@. =@@   @@^  =@@@@@@^.@@@@@^ @@^ .\@@@@@`  @@*  =@^ 
+    #      ]@@@@@               =@@       @@^              =@@@@@@].  .@@` ./@@@ ,@@@^                /@^                     
+    #     @@^      @@*          =@@       @@^              =@@   ,@@\      =@@   @@^                                          
+    #     \@@].  =@@@@@.=@@@@@` =@@@@@@@. @@^ ./@@@@\.     =@@    .@@^.@@.@@@@@@@@@@@.@@   @@^ /@@@@^ @@^ ./@@@@@]  @@/@@@@.  
+    #       ,\@@\  @@*   .]]/@@ =@@.  =@\ @@^ @@\]]/@^     =@@     @@^.@@. =@@   @@^ .@@   @@^ @@\`   @@^ @@^   \@^ @@`  \@^  
+    #          @@^ @@* ,@@` =@@ =@@   =@/ @@^ @@`          =@@   ./@/ .@@. =@@   @@^ .@@.  @@^   ,\@@ @@^ @@^   /@^ @@*  =@^  
+    #    .@@@@@@/  \@@@.@@@@@@@ =@@@@@@/  @@^ .\@@@@@.     =@@@@@@/`  .@@. =@@   @@^  =@@@@@@^.@@@@@^ @@^ .\@@@@@`  @@*  =@^ 
     
-    """
+    # """
 
     # 画图模式 SD 处理
     def sd_handle(self, data):
@@ -1923,26 +1923,26 @@ class My_handle(metaclass=SingletonMeta):
         return flag
 
 
-    """                                                              
+    # """                                                              
                                                                            
-                                                         ,`                
-                             @@@@`               =@@\`   /@@/              
-                ,/@@] =@@@`  @@@/                 =@@\/@@@@@@@@@[          
-           .\@@/[@@@@` ,@@@ =@/.             ,[[[[.=@^ ,@@@@\`             
-                *@@^,`  .]]]@@@@@@\`          ,@@@@@@[[[. =@@@@.           
-           .]]]]/@@`\@@/ *@@^  =@@@/           ,@@@@@@@@/`@@@`             
-            =@@*    .@@@@@@@@/`@@@^             ,@@\]]/@@@@@.              
-            =@@      =@@*.@@\]/@@^               ,\@@\   ,]]@@@@]          
-          ,/@@@@@@@^  \@/[@@^               .@@@@@@@@@[[[\@\.              
-          ,@/. .@@@      .@@\]/@@@@@@`          ,@@@,@@@.,]@@@`            
-               .@@/@@@@@/[@@/                  /@@\]@@@@@@@@@@@@@]         
-               =@@^      .@@^                ]@@@@@^ @@@  @@@ ,@@@@@@\].   
-           ,]]/@@@`      .@@^             ./@/` .@@^.@@@/@@@/              
-             \@@@`       .@@^                       .@@@ .[[               
-                         .@@`                        @@^                   
+    #                                                      ,`                
+    #                          @@@@`               =@@\`   /@@/              
+    #             ,/@@] =@@@`  @@@/                 =@@\/@@@@@@@@@[          
+    #        .\@@/[@@@@` ,@@@ =@/.             ,[[[[.=@^ ,@@@@\`             
+    #             *@@^,`  .]]]@@@@@@\`          ,@@@@@@[[[. =@@@@.           
+    #        .]]]]/@@`\@@/ *@@^  =@@@/           ,@@@@@@@@/`@@@`             
+    #         =@@*    .@@@@@@@@/`@@@^             ,@@\]]/@@@@@.              
+    #         =@@      =@@*.@@\]/@@^               ,\@@\   ,]]@@@@]          
+    #       ,/@@@@@@@^  \@/[@@^               .@@@@@@@@@[[[\@\.              
+    #       ,@/. .@@@      .@@\]/@@@@@@`          ,@@@,@@@.,]@@@`            
+    #            .@@/@@@@@/[@@/                  /@@\]@@@@@@@@@@@@@]         
+    #            =@@^      .@@^                ]@@@@@^ @@@  @@@ ,@@@@@@\].   
+    #        ,]]/@@@`      .@@^             ./@/` .@@^.@@@/@@@/              
+    #          \@@@`       .@@^                       .@@@ .[[               
+    #                      .@@`                        @@^                   
                                                                                                                                           
 
-    """
+    # """
 
     # 弹幕处理
     def comment_handle(self, data):
@@ -1982,7 +1982,7 @@ class My_handle(metaclass=SingletonMeta):
                         "timestamp": My_handle.common.get_bj_time(0)
                     }
                 }
-                tmp_json = My_handle.common.send_request(f'http://{My_handle.config.get("webui", "ip")}:{My_handle.config.get("webui", "port")}/callback', "POST", return_webui_json, timeout=10)
+                tmp_json = My_handle.common.send_request(f'http://{My_handle.config.get("webui", "ip")}:{My_handle.config.get("webui", "port")}/callback', "POST", return_webui_json, timeout=5000)
             
 
             # 记录数据库

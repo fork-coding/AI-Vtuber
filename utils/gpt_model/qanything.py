@@ -222,6 +222,8 @@ class QAnything:
         """
         try:
             if self.config_data["type"] == "online":
+                logging.info("开始online----",self.config_data["kb_ids"])
+                # resp_json = self.chat(self.config_data["kb_ids"][0], data["prompt"])
                 resp_json = self.chat(self.config_data["kb_ids"][0], data["prompt"])
 
                 return resp_json["result"]["response"]
@@ -234,7 +236,9 @@ class QAnything:
                     "question": data["prompt"], 
                     "history": self.history
                 }
-
+                
+                logging.info(data_json)
+                
                 response = requests.post(url=url, json=data_json)
                 response.raise_for_status()  # 检查响应的状态码
 
@@ -286,6 +290,7 @@ if __name__ == '__main__':
     qanything = QAnything(data)
 
     if data["type"] == "online":
+        logging.info("开始online----")
         qanything.kbList()
     elif data["type"] == "local":
         qanything.get_list_knowledge_base()
